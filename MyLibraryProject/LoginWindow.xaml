@@ -1,0 +1,43 @@
+﻿<Window x:Class="MyLibraryProject.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyLibraryProject"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="true"
+        WindowStartupLocation="CenterScreen"
+        Title="LoginWindow" Height="400" Width="400" Background="Azure" BorderBrush="CornflowerBlue" BorderThickness="7">
+
+    <Border Background="CornflowerBlue" CornerRadius="20" Margin="25">
+        <StackPanel Margin="10">
+
+            <Button x:Name="Bt_Exit" Click="Bt_Exit_Click" Margin="200,10,30,10" Content="Exit" FontSize="25" FontStyle="Italic" Foreground="Bisque" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent" Background="Transparent">
+            </Button>
+            <Label Content="LOGIN" FontSize="20" FontStyle="Italic" Foreground="Bisque" HorizontalContentAlignment="Left" />
+          
+            <Grid Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Label Content="User name" FontStyle="Italic" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" FontSize="20" Foreground="Azure" HorizontalContentAlignment="Left" />
+                <TextBox Name="TxtUserName" FontStyle="Italic" Margin="30,0" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" Background="Azure" Foreground="CornflowerBlue" FontSize="20"/>
+                <Label Content="Password" FontStyle="Italic" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" FontSize="20" Foreground="Azure" HorizontalContentAlignment="Left" />
+                <PasswordBox Name="TxtPassWord" FontStyle="Italic" Margin="30,0" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Background="Azure" Foreground="CornflowerBlue" FontSize="20" PasswordChar="*" />
+
+            </Grid>
+            <Button Content="Submit" Margin="200,30,20,10" FontSize="25" FontStyle="Italic" Foreground="Bisque" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent"  Name="BtnLogin" Click="BtnLogin_Click" Background="Transparent" Cursor="Arrow"/>
+
+        </StackPanel>
+    </Border>
+
+</Window>
